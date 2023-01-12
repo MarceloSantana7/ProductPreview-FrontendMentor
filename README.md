@@ -12,7 +12,7 @@ Thanks for checking out this front-end coding challenge.
   
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://marcelosantana7.github.io/ProductPreview-FrontendMentor/
 
 ## Author
 
