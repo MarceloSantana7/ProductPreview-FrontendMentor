@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  /* Primay */
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /* Neutral */
+  --VeryDark: hsl(212, 21%, 14%);
+  --DarkGrayish: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.preview {
+  background-color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.image {
+  flex: 1;
+  min-width: 50%;
+  background-image: url('./images/image-product-desktop.jpg');
+  background-size: cover;
+}
+
+.info {
+  padding: 20px;
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 10px;
+  color: var(--DarkGrayish);
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: .4rem;
+  font-family: 'Montserrat';
+}
+
+.title {
+  font-size: 25px;
+  color: var(--VeryDark);
+  line-height: 24px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Fraunces';
+}
+
+p {
+  font-size: 11px;
+  line-height: 1rem;
+  color: var(--DarkGrayish);
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
+}
+
+button {
+  outline: 0;
+  background-color: var(--DarkCyan);
+  border: 0;
+  padding: 6px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.price_tag {
+  display: flex;
+  align-items: center;  
+  margin-bottom: 20px;
+}
+
+.price {
+  font-family: 'Fraunces';
+  font-size: 24px;
+  color: var(--DarkCyan);
+}
+.priceOld {
+  font-family: 'Montserrat';
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: var(--DarkGrayish);
+}
+
+@media screen and (max-width: 375px) {
+  .preview {
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .image {
+    min-height: 200px;
+  }
+  .info {
+    flex: 1;
+  }
+
+  button {
+    height: 40px;
+    margin-top: 30px;
+  }
+}
